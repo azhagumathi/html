@@ -1,0 +1,123 @@
+<html>
+<head>
+<style>
+table
+{
+position:absolute;
+top:60px;
+left:400px;
+}
+tr
+{
+width:80px;
+height:70px;
+}
+td{
+width:100px;
+}
+h2
+{
+position:absolute;
+left:420px;
+}
+a{
+text-decoration:none;
+}
+</style>
+<script>
+
+function disp()
+{
+var name1;
+var user;
+var email;
+
+name1=document.getElementById("a").value;
+user=document.getElementById("b").value;
+email=document.getElementById("c").value;
+
+var res="name: " +name1+ " "+ "username: " +user+" "+"email-id: "+email;
+alert(res);
+}
+
+</script>
+</head>
+<body bgcolor="pink">
+<h2>REGISTERATION FORM</H2>
+<table>
+<form>
+
+
+<tr>
+<td width=100px>
+First Name:
+</td>
+<td> 
+<input type="text" name="first" id="a" >
+</td>
+
+</tr>
+<tr>
+<td width=100px>
+Last Name: 
+</td>
+<td width=100px>
+<input type="text" name="last" >
+</td>
+
+</tr>
+<tr>
+<td width=100px>
+Gender
+</td>
+<td width="40px">
+<input type="radio" name="gender" value="male">
+
+<label for gender=male>Male</label>
+</td>
+<td>
+<input type="radio" name="gender" value="female">
+
+<label forgender="female" s>Female</label>
+</td>
+</tr>
+
+</fielset>
+<fielset>
+<tr>
+<td>
+Username:
+</td>
+<td>
+<input type="text" name="user" id="b" >
+</td>
+</tr>
+
+<td>
+Email id
+</td>
+<td>
+<input type="text" name="email" id="c" >
+</td>
+</tr>
+
+<td>	
+Password:
+</td>
+<td>
+<input type="password" name="pass" >
+</td>
+</tr>
+
+
+
+
+<tr>
+<td>
+<button type="submit" onclick=disp() ><a href="home.html">Submit</a></button>
+</td>
+<td>
+<button type="reset" > Reset</button>
+</td>
+</body>
+</html>
