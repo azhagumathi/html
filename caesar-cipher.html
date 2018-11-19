@@ -1,0 +1,38 @@
+<script>
+//caesars ciphers
+
+function rot13(str) { 
+let c="";
+let t;
+  for(let i=0;i<str.length;i++)
+  {
+      
+      if(str[i].match("[A-Z]"))
+      {
+          
+          t=str.charCodeAt(i)
+          
+        if(t<78)         
+        {
+
+         t=t+13;
+        }
+        else
+        {
+            t=t-13;
+        }
+            c+=String.fromCharCode(t)
+          
+      }
+      else{
+
+           c+=str[i]
+          
+         
+      }
+  }
+  return c;
+}
+
+console.log(rot13("SERR !"));
+</script>
